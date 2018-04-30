@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+<title>Ideo projekt</title> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet"> 
+<script>
+function closeMenu() {
+    document.getElementById("menu-left").style.width="0px";
+	document.getElementById("nav-icon").style.left="0px";
+	document.getElementById("off").style.visibility="hidden";
+	document.getElementById("on").style.visibility="visible";
+}
+function openMenu() {
+    document.getElementById("menu-left").style.width="110px";
+	document.getElementById("nav-icon").style.left="120px";
+	document.getElementById("off").style.visibility="visible";
+	document.getElementById("on").style.visibility="hidden";
+}
+function openSzukaj(){
+	document.getElementById("wyszukiwarka").style.visibility="visible";
+}
+</script>
+<style> 
+
+body {
+	font-family: 'IBM Plex Sans', sans-serif;
+	}
+	
+.navbar-top{ 
+	z-index: 2;
+	background-color: #123b6d;
+	color: white;
+	}
+	
+.logo{
+	top: 0px;
+	width: 150px;
+	height: 100px;
+	position: absolute;
+	box-shadow: 2px 2px #d5ddda;
+	}
+	
+.icon {
+	font-size: 30px;
+	top: 10px;
+	right-margin: 0px;
+	}
+	
+#wyszukiwarka{
+	visibility: hidden;
+	width: 150px;
+	color: #1863ae;
+	}
+	
+#myNavbar a{
+	color: white;
+	}
+	
+#menu-left {
+	  top: 50px;
+      left: 10px;
+      height: 100vh;
+      width: 110px;
+      margin: 0;
+      padding-top: 55px;
+	  position: fixed;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  }
+	  
+#menu-left a {
+	color: #123b6d;
+	}
+	
+.left-menu ul {
+      list-style: none;
+      padding-left: 10px;
+	  color: #123b6d;
+	  }
+	  
+ #nav-icon{	
+      position: fixed;
+	  left: 120px;
+	  top: 0px;
+      height: 100vh;
+      margin: 0;
+      padding-top: 50vh;
+	  border-right: 1px solid #d5ddda;
+	  box-shadow: 1px 3px #e3e8e6;
+	  overflow-x: hidden;
+	  transition: 0.5s;
+	  }
+	  
+.social{
+	font-size:30px;
+	}
+	
+#on {
+	visibility: hidden;
+	color: #123b6d;
+	}
+	
+#off {
+	color: #123b6d;
+	}
+	
+.tresc{
+	-webkit-column-count: 2;
+    -moz-column-count: 2; 
+    column-count: 2;
+	line-height: 95%
+	}
+.tresc img {
+	max-width: 100%;
+	}
+	
+footer {
+	background-color: #123b6d;
+	height: 30px;
+	position:fixed;
+	bottom:0;
+	width: 100%;
+	color: white;
+	}
+	
+h1 {
+	color: #123b6d;
+	}
+	
+h3{
+	font-size: 15px;
+	line-height: 5%
+}
+
+.big-ikon{
+	font-size: 50px;
+	}
+</style>
+</head> 
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="75">
+<nav class="navbar navbar-default navbar-top">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="navbar-header col-sm-1 col-sm-offset-2">
+      <a class="navbar-brand" href="index.html"><img class="logo" src="https://t4.ftcdn.net/jpg/00/78/04/13/240_F_78041389_o6Cpl1atzrkz6Mv1B2rCLdmFREVvFmtt.jpg"></a>
+    </div>
+    <div class="col-sm-7">
+      <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="">Dłuższa nazwa</a></li>
+          <li><a href="">Link</a></li>
+          <li><a href="">Dłuższa nazwa</a></li>
+		  <li><a href="">Link</a></li>
+		  <li><a href="">Dłuższa nazwa</a></li>
+		  <li><a href="">Link</a></li>
+        </ul>
+	</div>
+    </div>
+	<div class="collapse navbar-collapse">
+	<form>
+		<input type="search" placeholder="Szukaj" id="wyszukiwarka"> 
+		<span class="glyphicon glyphicon-search icon" style="cursor:pointer" onclick="openSzukaj()" id="szukaj"></span> 
+	  </form>
+	</div>
+	</div>
+  </div>
+</nav>    
+<div class="container-fluid">
+  <div class="row">
+	<nav class="col-sm-1">
+	  <div class="left-menu" id="menu-left">
+      <ul>
+		<li> Menu </li>
+		<li><hr></li>
+        <li><a href="">Link</a></li>
+        <li><a href="">Link</a></li>
+        <li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>  
+		<li><hr></li>
+		<li><a href="">Link</a></li>
+        <li><a href="">Link</a></li>
+        <li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>
+		<li><a href="">Link</a></li>  
+		<li><hr></li>
+		<li><a href="https://www.facebook.com/"><span class="fa fa-facebook social"></span></a></li>
+		<li><a href=""><span class="fa fa-linkedin social"></span></a></li>
+  </div>
+    <div id="nav-icon">
+      <span class="glyphicon glyphicon-triangle-left" id="off" style="cursor:pointer" onclick="closeMenu()"></span>
+	  <span class="glyphicon glyphicon-triangle-right" id="on" style="cursor:pointer" onclick="openMenu()"></span>
+  </div>
+	</nav>
+    <div class="col-sm-8 col-sm-offset-1 text-justify">
+		<div class="nagłówek text-center">
+		    <h1><span class="glyphicon glyphicon-home big-ikon"> </span> NAGŁÓWEK</h1>
+			<hr>
+		</div>
+		<div class="tresc">  
+			<h3>PRZYKLADOWY TEKST</h3>
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Example.svg/1024px-Example.svg.png">
+			<p>LOREM IPSUM dolor sit amet, consectetur adipiscing elit. Fusce malesuada sem et mi lobortis faucibus at sed nunc. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla dapibus, ipsum nec fermentum sodales, lorem quam dictum nisl, in tincidunt lectus dolor a turpis. Nulla sed sapien sit amet magna dignissim congue sit amet at eros. Morbi commodo est feugiat lacus maximus, eget luctus nulla interdum. Mauris luctus ornare mauris vel posuere. Donec viverra ex aliquam, scelerisque justo id, auctor neque.
+			</br>
+			Proin nec dui nec eros facilisis semper vitae et ante. Nunc condimentum, mi eget condimentum auctor, risus lectus auctor odio, vitae condimentum eros ipsum id massa. Morbi luctus purus ipsum. Aenean aliquet dolor id dui consectetur, et molestie ante interdum. Donec bibendum sagittis mauris, non lobortis justo consectetur eget. Etiam iaculis, lectus ut vehicula faucibus, enim est placerat nibh, at ullamcorper est ex quis sapien. Quisque egestas nunc eget consequat dapibus. Nulla venenatis tortor sem, eget condimentum dui vulputate at. Sed enim sapien, finibus vel placerat eu, placerat vitae ipsum. Morbi euismod nisl in tortor laoreet, in consequat nulla malesuada. Ut lacus turpis, scelerisque sed efficitur eu, luctus in lacus. Etiam rutrum consectetur purus eu ultricies.
+			</br>
+			Praesent commodo eu mauris dignissim mattis. Integer tincidunt scelerisque elit, facilisis iaculis velit posuere pharetra. Donec vitae urna vestibulum, molestie metus in, sollicitudin sem. Pellentesque mi risus, luctus venenatis blandit vitae, placerat in urna. Nullam lacus erat, facilisis vel dui a, dapibus consectetur tortor. Nam molestie consequat turpis, eget hendrerit est eleifend sit amet. Duis et imperdiet dui, vitae condimentum libero. Cras laoreet dapibus turpis vel imperdiet. Nulla dapibus non sapien vestibulum faucibus.</p>  
+			<h3>Section 2</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada sem et mi lobortis faucibus at sed nunc. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla dapibus, ipsum nec fermentum sodales, lorem quam dictum nisl, in tincidunt lectus dolor a turpis. Nulla sed sapien sit amet magna dignissim congue sit amet at eros. Morbi commodo est feugiat lacus maximus, eget luctus nulla interdum. Mauris luctus ornare mauris vel posuere. Donec viverra ex aliquam, scelerisque justo id, auctor neque.
+			</br>
+			Proin nec dui nec eros facilisis semper vitae et ante. Nunc condimentum, mi eget condimentum auctor, risus lectus auctor odio, vitae condimentum eros ipsum id massa. Morbi luctus purus ipsum. Aenean aliquet dolor id dui consectetur, et molestie ante interdum. Donec bibendum sagittis mauris, non lobortis justo consectetur eget. Etiam iaculis, lectus ut vehicula faucibus, enim est placerat nibh, at ullamcorper est ex quis sapien. Quisque egestas nunc eget consequat dapibus. Nulla venenatis tortor sem, eget condimentum dui vulputate at. Sed enim sapien, finibus vel placerat eu, placerat vitae ipsum. Morbi euismod nisl in tortor laoreet, in consequat nulla malesuada. Ut lacus turpis, scelerisque sed efficitur eu, luctus in lacus. Etiam rutrum consectetur purus eu ultricies.
+			</br>
+			Praesent commodo eu mauris dignissim mattis. Integer tincidunt scelerisque elit, facilisis iaculis velit posuere pharetra. Donec vitae urna vestibulum, molestie metus in, sollicitudin sem. Pellentesque mi risus, luctus venenatis blandit vitae, placerat in urna. Nullam lacus erat, facilisis vel dui a, dapibus consectetur tortor. Nam molestie consequat turpis, eget hendrerit est eleifend sit amet. Duis et imperdiet dui, vitae condimentum libero. Cras laoreet dapibus turpis vel imperdiet. Nulla dapibus non sapien vestibulum faucibus.</p>
+			<h3>Section 3</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada sem et mi lobortis faucibus at sed nunc. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla dapibus, ipsum nec fermentum sodales, lorem quam dictum nisl, in tincidunt lectus dolor a turpis. Nulla sed sapien sit amet magna dignissim congue sit amet at eros. Morbi commodo est feugiat lacus maximus, eget luctus nulla interdum. Mauris luctus ornare mauris vel posuere. Donec viverra ex aliquam, scelerisque justo id, auctor neque.
+			</br>
+			Proin nec dui nec eros facilisis semper vitae et ante. Nunc condimentum, mi eget condimentum auctor, risus lectus auctor odio, vitae condimentum eros ipsum id massa. Morbi luctus purus ipsum. Aenean aliquet dolor id dui consectetur, et molestie ante interdum. Donec bibendum sagittis mauris, non lobortis justo consectetur eget. Etiam iaculis, lectus ut vehicula faucibus, enim est placerat nibh, at ullamcorper est ex quis sapien. Quisque egestas nunc eget consequat dapibus. Nulla venenatis tortor sem, eget condimentum dui vulputate at. Sed enim sapien, finibus vel placerat eu, placerat vitae ipsum. Morbi euismod nisl in tortor laoreet, in consequat nulla malesuada. Ut lacus turpis, scelerisque sed efficitur eu, luctus in lacus. Etiam rutrum consectetur purus eu ultricies.
+			</br>
+			Praesent commodo eu mauris dignissim mattis. Integer tincidunt scelerisque elit, facilisis iaculis velit posuere pharetra. Donec vitae urna vestibulum, molestie metus in, sollicitudin sem. Pellentesque mi risus, luctus venenatis blandit vitae, placerat in urna. Nullam lacus erat, facilisis vel dui a, dapibus consectetur tortor. Nam molestie consequat turpis, eget hendrerit est eleifend sit amet. Duis et imperdiet dui, vitae condimentum libero. Cras laoreet dapibus turpis vel imperdiet. Nulla dapibus non sapien vestibulum faucibus.</p>
+			<h3>Section 4</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce malesuada sem et mi lobortis faucibus at sed nunc. Suspendisse potenti. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla dapibus, ipsum nec fermentum sodales, lorem quam dictum nisl, in tincidunt lectus dolor a turpis. Nulla sed sapien sit amet magna dignissim congue sit amet at eros. Morbi commodo est feugiat lacus maximus, eget luctus nulla interdum. Mauris luctus ornare mauris vel posuere. Donec viverra ex aliquam, scelerisque justo id, auctor neque.
+			</br>
+			Proin nec dui nec eros facilisis semper vitae et ante. Nunc condimentum, mi eget condimentum auctor, risus lectus auctor odio, vitae condimentum eros ipsum id massa. Morbi luctus purus ipsum. Aenean aliquet dolor id dui consectetur, et molestie ante interdum. Donec bibendum sagittis mauris, non lobortis justo consectetur eget. Etiam iaculis, lectus ut vehicula faucibus, enim est placerat nibh, at ullamcorper est ex quis sapien. Quisque egestas nunc eget consequat dapibus. Nulla venenatis tortor sem, eget condimentum dui vulputate at. Sed enim sapien, finibus vel placerat eu, placerat vitae ipsum. Morbi euismod nisl in tortor laoreet, in consequat nulla malesuada. Ut lacus turpis, scelerisque sed efficitur eu, luctus in lacus. Etiam rutrum consectetur purus eu ultricies.
+			</br>
+			Praesent commodo eu mauris dignissim mattis. Integer tincidunt scelerisque elit, facilisis iaculis velit posuere pharetra. Donec vitae urna vestibulum, molestie metus in, sollicitudin sem. Pellentesque mi risus, luctus venenatis blandit vitae, placerat in urna. Nullam lacus erat, facilisis vel dui a, dapibus consectetur tortor. Nam molestie consequat turpis, eget hendrerit est eleifend sit amet. Duis et imperdiet dui, vitae condimentum libero. Cras laoreet dapibus turpis vel imperdiet. Nulla dapibus non sapien vestibulum faucibus.</p>
+		</div>
+    </div>
+  </div>
+</div>
+</br>
+</br>
+<footer class="container-fluid text-center"> 
+	Banuch Damian 2018
+</footer>
+</body> 
+</html>
