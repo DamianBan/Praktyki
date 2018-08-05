@@ -1,2 +1,2 @@
 # Praktyki
-Projekt ideo
+Projekt
